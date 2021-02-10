@@ -11,7 +11,7 @@ def oneTimeSetUp(request):
     driver.maximize_window()
     request.cls.driver = driver
     yield driver
-    #print('drive close')
+
     driver.close()
-    #print('driver quit')
+
     driver.quit()
