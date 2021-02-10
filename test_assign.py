@@ -6,7 +6,7 @@ import pytest
 @pytest.mark.usefixtures('oneTimeSetUp')
 class Test_opration:
 
-    def test_multi(self,):
+    def test_assignment(self,):
 
         drop_down=self.driver.find_element_by_xpath("(//i[@class='caret pull-right'])[2]")
 
