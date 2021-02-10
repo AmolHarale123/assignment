@@ -35,4 +35,7 @@ class Test_Auotomation:
         sleep(2)
         #self.driver.save_screenshot("../Screenshot/confirmation_send.png")
         sleep(2)
-        assert drop_down_text.text==" English"
+        send_on_email=self.driver.find_element_by_xpath("(//span[@class='ng-binding'])[19]']")
+        print(send_on_email.text)
+        sleep(5)
+        assert send_on_email.text == " A welcome email has been sent. Please check your email."
